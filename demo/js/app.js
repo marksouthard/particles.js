@@ -16,7 +16,7 @@ particlesJS('particles-js',
   {
     "particles": {
       "number": {
-        "value":  50,
+        "value":  10,
         "density": {
           "enable": true,
           "value_area": 800
@@ -26,11 +26,7 @@ particlesJS('particles-js',
         "value": ["#1EC185", "#2DA9D7", "#212A3E", "#1EC185", "#2DA9D7"]
       },
       "shape": {
-        "type": ["circle", "image"],
-        "stroke": {
-          "width": 0,
-          "color": "#000000"
-        },
+        "type": ["image", "circle"],
         "image": {
           "src": "http://f.cl.ly/items/1Z3I2r0a0F3A3t3X1R0V/logobit.svg",
           "width": 80,
@@ -39,73 +35,24 @@ particlesJS('particles-js',
       },
       "opacity": {
         "value": 1,
-        "random": false,
-        "anim": {
-          "enable": false,
-          "speed": 1,
-          "opacity_min": 0.1,
-          "sync": false
-        }
+        "random": false
       },
       "size": {
-        "value": 15,
-        "random": true,
-        "anim": {
-          "enable": false,
-          "speed": 40,
-          "size_min": 0.1,
-          "sync": false
-        }
+        "value": 25,
+        "random": true
       },
       "move": {
         "enable": true,
-        "speed": 0.25,
-        "direction": "top-right",
+        "speed": 2,
         "random": true,
-        "straight": false,
-        "out_mode": "bounce",
-        "attract": {
-          "enable": false,
-          "rotateX": 400,
-          "rotateY": 800
-        }
+        "straight": true,
+        "out_mode": "out"
       }
     },
     "interactivity": {
       "detect_on": "canvas",
       "events": {
-        "onhover": {
-          "enable": false,
-          "mode": "grab"
-        },
-        "onclick": {
-          "enable": true,
-          "mode": "bubble"
-        },
         "resize": true
-      },
-      "modes": {
-        "grab": {
-          "distance": 400,
-          "line_linked": {
-            "opacity": 1
-          }
-        },
-        "bubble": {
-          "distance": 200,
-          "size": 10,
-          "duration": .5,
-          "speed": 5
-        },
-        "repulse": {
-          "distance": 200
-        },
-        "push": {
-          "particles_nb": 4
-        },
-        "remove": {
-          "particles_nb": 2
-        }
       }
     },
     "retina_detect": true,
