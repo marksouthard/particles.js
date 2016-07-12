@@ -388,26 +388,6 @@ var pJS = function(tag_id, params){
   };
 
 
-  /* ---------- pJS functions - particles interaction ------------ */
-
-  pJS.fn.interact.bounceParticles = function(p1, p2){
-
-    var dx = p1.x - p2.x,
-        dy = p1.y - p2.y,
-        dist = Math.sqrt(dx*dx + dy*dy),
-        dist_p = p1.radius+p2.radius;
-
-    if(dist <= dist_p){
-      p1.vx = -p1.vx;
-      p1.vy = -p1.vy;
-
-      p2.vx = -p2.vx;
-      p2.vy = -p2.vy;
-    }
-
-  }
-
-
   /* ---------- pJS functions - vendors ------------ */
 
   pJS.fn.vendors.eventsListeners = function(){
