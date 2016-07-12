@@ -16,11 +16,7 @@ particlesJS('particles-js',
   {
     "particles": {
       "number": {
-        "value":  10,
-        "density": {
-          "enable": true,
-          "value_area": 800
-        }
+        "value":  10
       },
       "color": {
         "value": ["#1EC185", "#2DA9D7", "#212A3E", "#1EC185", "#2DA9D7"]
@@ -38,15 +34,14 @@ particlesJS('particles-js',
         "random": false
       },
       "size": {
-        "value": 25,
-        "random": true
+        "value": 5,
+        "random": false
       },
       "move": {
         "enable": true,
         "speed": 2,
         "random": true,
-        "straight": true,
-        "out_mode": "out"
+        "straight": true
       }
     },
     "interactivity": {
@@ -55,15 +50,7 @@ particlesJS('particles-js',
         "resize": true
       }
     },
-    "retina_detect": true,
-    // "config_demo": {
-    //   "hide_card": false,
-    //   "background_color": "#b61924",
-    //   "background_image": "",
-    //   "background_position": "50% 50%",
-    //   "background_repeat": "no-repeat",
-    //   "background_size": "cover"
-    // }
+    "retina_detect": true
   }
 
 );

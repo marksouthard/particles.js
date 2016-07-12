@@ -1,11 +1,7 @@
 {
   "particles": {
     "number": {
-      "value": 80,
-      "density": {
-        "enable": true,
-        "value_area": 800
-      }
+      "value": 80
     },
     "color": {
       "value": "#ffffff"
@@ -37,8 +33,7 @@
       "enable": true,
       "speed": 6,
       "random": false,
-      "straight": true,
-      "out_mode": "out"
+      "straight": true
     }
   },
   "interactivity": {
