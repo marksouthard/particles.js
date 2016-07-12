@@ -281,33 +281,15 @@ var pJS = function(tag_id, params){
     }
 
     pJS.canvas.ctx.fillStyle = color_value;
-    // pJS.canvas.ctx.beginPath();
 
     switch(p.shape){
 
       case 'circle':
-        // pJS.canvas.ctx.save();
         pJS.canvas.ctx.beginPath();
-        // pJS.canvas.ctx.translate(p.x, p.y);
-        // pJS.canvas.ctx.rotate(p.theta * Math.PI/180);
-        // pJS.canvas.ctx.rect(0-radius, 0-radius, radius*2, radius*2);
-        // pJS.canvas.ctx.restore();
         pJS.canvas.ctx.arc(p.x, p.y, radius, 0, Math.PI * 2, false);
       break;
 
       case 'image':
-      // if(pJS.tmp.img_type == 'svg'){
-      //     var img_obj = p.img.obj;
-      //   }else{
-      //     var img_obj = pJS.tmp.img_obj;
-      //   }
-      //   pJS.canvas.ctx.save();
-      //   pJS.canvas.ctx.beginPath();
-      //   pJS.canvas.ctx.translate(p.x, p.y);
-      //   pJS.canvas.ctx.rotate(p.theta * Math.PI/180);
-      //   console.log(p.img);
-      //   pJS.canvas.ctx.drawImage(img_obj, 0-radius, 0-radius/p.img.ratio, radius*2, radius*2/p.img.ratio);
-      //   pJS.canvas.ctx.restore();
         function draw(){
           pJS.canvas.ctx.save();
           pJS.canvas.ctx.translate(p.x, p.y);
@@ -316,8 +298,6 @@ var pJS = function(tag_id, params){
             img_obj,
             0 - p.radius,
             0 - p.radius / p.img.ratio,
-            // p.x-radius,
-            // p.y-radius / p.img.ratio,
             radius*2,
             radius*2 / p.img.ratio
           );
@@ -340,7 +320,6 @@ var pJS = function(tag_id, params){
 
     pJS.canvas.ctx.closePath();
     pJS.canvas.ctx.fill();
-    // pJS.canvas.ctx.restore();
   };
 
 
@@ -480,6 +459,16 @@ var pJS = function(tag_id, params){
         }
         pJS.tmp.pushing = false;
       }
+    }
+
+  };
+
+
+  pJS.fn.modes.removeParticles = function(nb){
+
+    pJS.particles.array.splice(0, nb);
+    if(!pJS.particles.move.enable){
+      pJS.fn.particlesDraw();
     }
 
   };
