@@ -236,7 +236,6 @@ var pJS = function(tag_id, params){
 
     /* Set angle */
     this.theta = Math.floor((Math.random() * 360) + 1);
-    this.theta_i = this.theta;
     this.forward_rotation = Math.random() < 0.5;
 
     /* if shape is image */
