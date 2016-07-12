@@ -16,11 +16,7 @@ particlesJS('particles-js',
   {
     "particles": {
       "number": {
-        "value":  10,
-        "density": {
-          "enable": false,
-          "value_area": 800
-        }
+        "value":  10
       },
       "color": {
         "value": ["#1EC185", "#2DA9D7", "#212A3E", "#1EC185", "#2DA9D7"]
@@ -45,8 +41,7 @@ particlesJS('particles-js',
         "enable": true,
         "speed": 2,
         "random": true,
-        "straight": true,
-        "out_mode": "out"
+        "straight": true
       }
     },
     "interactivity": {
